@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="app_launch_animation_fade">false</bool>
+    <bool name="is_search_type_bar">false</bool>
+    <bool name="is_hint_flipping_allowed">false</bool>
+</resources>

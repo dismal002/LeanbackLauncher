@@ -1,0 +1,3 @@
+include ':app', ':launcher3-m'
+rootProject.name = "LeanbackLauncher"
+project(':launcher3-m').projectDir = new File(rootDir, '../launcher3-m')

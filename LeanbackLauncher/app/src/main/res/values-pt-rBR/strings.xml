@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Inicializador do Leanback</string>
+    <string name="app_label">Tela inicial</string>
+    <string name="search_hint_text">Pesquisar filmes, TV e muito mais</string>
+    <string name="focused_search_hint_text">Clique para pesquisar</string>
+    <string name="category_label_apps">Apps</string>
+    <string name="category_label_games">Jogos</string>
+    <string name="category_label_settings" />
+    <string name="input_title_bundled_tuner">Canais</string>
+    <string name="category_label_inputs">Entradas</string>
+    <string name="settings_network">Configurações de rede</string>
+    <string name="notif_service_name">Serviço de recomendações</string>
+    <string name="install_pending">Instalar pendente…</string>
+    <string name="update_pending">Atualizar pendente…</string>
+    <string name="restore_pending">Restaurar pendente…</string>
+    <string name="downloading">Fazendo download...</string>
+    <string name="installing">Instalando...</string>
+    <string name="unknown_state">…</string>
+    <string name="progress_percent">%1$d%%</string>
+    <string name="now_playing_card_playing">Reproduzindo agora</string>
+    <string name="now_playing_card_paused">Pausado</string>
+    <string name="now_playing_card_stopped">Interrompido</string>
+    <string name="unknown_title">Desconhecido</string>
+    <string name="unknown_artist">Desconhecido</string>
+    <string name="unknown_album">Desconhecido</string>
+    <string name="unknown_album_artist">Desconhecido</string>
+    <string name="recommendation_row_preparing_message">Preparando recomendações</string>
+    <string name="recommendation_row_empty_message_recs_disabled">"Algumas recomendações estão ocultas
+Para ativá-las, vá para \"Config.\""</string>
+    <string name="recommendation_row_empty_message_no_recs">Não há recomendações disponíveis no momento</string>
+    <string name="recommendation_row_empty_message_no_connection">Não há conexão com a Internet no momento</string>
+    <string name="input_source_disconnected">Desconectado</string>
+    <string name="input_source_unknown">Desconhecido</string>
+    <string name="failed_launch">Não pode ser aberto no momento</string>
+    <string name="settings_dialog_title">Tela inicial</string>
+    <string name="recommendation_blacklist_action_title">Personalizar recomendações</string>
+    <string name="recommendation_blacklist_content_title">Recomendações</string>
+    <string name="recommendation_blacklist_content_description">As fontes selecionadas podem exibir recomendações na tela inicial. Para ocultá-las, desative as recomendações de fontes específicas.</string>
+</resources>

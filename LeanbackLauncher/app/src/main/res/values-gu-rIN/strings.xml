@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="orb_search_action">શોધ ક્રિયા</string>
+    <string name="lb_search_bar_hint">શોધો</string>
+    <string name="lb_search_bar_hint_speech">શોધવા માટે બોલો</string>
+    <string name="lb_search_bar_hint_with_title">%1$s શોધો</string>
+    <string name="lb_search_bar_hint_with_title_speech">%1$s ને શોધવા માટે બોલો</string>
+    <string name="lb_control_display_fast_forward_multiplier">%1$dX</string>
+    <string name="lb_control_display_rewind_multiplier">%1$dX</string>
+    <string name="lb_playback_controls_play">ચલાવો</string>
+    <string name="lb_playback_controls_pause">થોભો</string>
+    <string name="lb_playback_controls_fast_forward">ઝડપી ફોરવર્ડ</string>
+    <string name="lb_playback_controls_fast_forward_multiplier">ફાસ્ટ ફોરવર્ડ કરો %1$dX</string>
+    <string name="lb_playback_controls_rewind">રીવાઇન્ડ કરો</string>
+    <string name="lb_playback_controls_rewind_multiplier">%1$dX ને રિવાઇન્ડ કરો</string>
+    <string name="lb_playback_controls_skip_next">આગલા પર જાઓ</string>
+    <string name="lb_playback_controls_skip_previous">પહેલાનાને છોડો</string>
+    <string name="lb_playback_controls_more_actions">વધુ ક્રિયાઓ</string>
+    <string name="lb_playback_controls_thumb_up">એકદમ સરસ નાપસંદ કરો</string>
+    <string name="lb_playback_controls_thumb_up_outline">એકદમ સરસ પસંદ કરો</string>
+    <string name="lb_playback_controls_thumb_down">સારું નથી નાપસંદ કરો</string>
+    <string name="lb_playback_controls_thumb_down_outline">સારું નથી પસંદ કરો</string>
+    <string name="lb_playback_controls_repeat_none">કોઈનું પુનરાવર્તન નહીં</string>
+    <string name="lb_playback_controls_repeat_all">બધાનું પુનરાવર્તન કરો</string>
+    <string name="lb_playback_controls_repeat_one">એક પુનરાવર્તિત કરો</string>
+    <string name="lb_playback_controls_shuffle_enable">શફલ કરોને સક્ષમ કરો</string>
+    <string name="lb_playback_controls_shuffle_disable">શફલ કરોને અક્ષમ કરો</string>
+    <string name="lb_playback_controls_high_quality_enable">ઉચ્ચ ગુણવત્તા સક્ષમ કરો</string>
+    <string name="lb_playback_controls_high_quality_disable">ઉચ્ચ ગુણવત્તા અક્ષમ કરો</string>
+    <string name="lb_playback_controls_closed_captioning_enable">ઉપશીર્ષક સક્ષમ કરો</string>
+    <string name="lb_playback_controls_closed_captioning_disable">વિગતવાર ઉપશીર્ષકોને અક્ષમ કરો</string>
+</resources>

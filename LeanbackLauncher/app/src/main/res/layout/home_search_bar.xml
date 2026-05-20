@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dismal.android.leanbacklauncher.SearchBarView android:layout_gravity="center" android:id="@id/search_view" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/search_bar_fixed_height" android:soundEffectsEnabled="false" android:contentDescription="@string/search_hint_text"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/search_bar" android:layout_width="@dimen/search_bar_width" android:layout_height="@dimen/search_bar_height" android:layout_marginTop="@dimen/search_bar_margin_top" android:layout_marginBottom="@dimen/search_bar_margin_bottom">
+        <ImageView android:id="@id/bg" android:background="@drawable/search_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+        <FrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="end|center" android:id="@id/orb" android:visibility="invisible" android:layout_width="@dimen/search_bar_height" android:layout_height="@dimen/search_bar_height" android:src="@drawable/ic_search_bar_orb" android:scaleType="fitCenter" android:contentDescription="@null" />
+            <TextView android:textSize="@dimen/search_bar_hint_text" android:textColor="@color/search_bar_hint_color" android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/hint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/search_hint_text" android:layout_marginStart="@dimen/search_bar_g_horizontal_margin" />
+            <ImageView android:layout_gravity="start|center" android:id="@id/g" android:layout_width="wrap_content" android:layout_height="@dimen/search_bar_g_height" android:src="@drawable/ic_search_g" android:scaleType="fitStart" android:contentDescription="@null" android:layout_marginStart="@dimen/search_bar_g_horizontal_margin" />
+            <ImageView android:layout_gravity="end|center" android:id="@id/mic" android:layout_width="wrap_content" android:layout_height="@dimen/search_bar_mic_height" android:src="@drawable/ic_search_mic_out_normal" android:scaleType="fitCenter" android:contentDescription="@null" android:layout_marginEnd="@dimen/search_bar_mic_horizontal_margin" />
+        </FrameLayout>
+    </FrameLayout>
+    <include layout="@layout/widget_wrapper" />
+</com.dismal.android.leanbacklauncher.SearchBarView>

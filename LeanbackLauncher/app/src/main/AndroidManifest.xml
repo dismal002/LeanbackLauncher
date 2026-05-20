@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BIND_APPWIDGET"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="com.android.providers.tv.permission.READ_EPG_DATA"/>
+
+    <application
+        android:theme="@style/LeanbackLauncherTheme"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:name="com.dismal.android.leanbacklauncher.LauncherApplication"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:requiredForAllUsers="true">
+        
+        <activity
+            android:label="@string/app_label"
+            android:name="com.dismal.android.leanbacklauncher.MainActivity"
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|navigation|keyboardHidden|keyboard"
+            android:supportsRtl="true"
+            android:exported="true">
+            <intent-filter android:priority="2">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.dismal.android.leanbacklauncher.SettingsActivity"
+            android:launchMode="singleInstance"
+            android:configChanges="navigation|keyboardHidden|keyboard"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.dismal.android.leanbacklauncher.SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:label="@string/notif_service_name"
+            android:name="com.dismal.android.leanbacklauncher.notifications.NotificationMonitorService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+                <action android:name="com.dismal.android.leanbacklauncher.notifications.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.dismal.android.leanbacklauncher.MediaButtonBroadcastReceiver"
+            android:exported="true">
+            <intent-filter android:priority="2">
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:label="@string/app_label"
+            android:name="com.dismal.android.leanbacklauncher.DummyActivity"
+            android:enabled="false"
+            android:stateNotNeeded="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.marshmallow.launcher.Launcher"
+            android:label="All Apps"
+            android:launchMode="singleTask"
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="nosensor"
+            android:exported="false" />
+
+        <!-- LauncherProvider contains launcher favorites and sets application context for LauncherAppState -->
+        <provider
+            android:name="com.marshmallow.launcher.LauncherProvider"
+            android:authorities="com.marshmallow.launcher.settings"
+            android:exported="true"
+            android:writePermission="com.marshmallow.launcher.permission.WRITE_SETTINGS"
+            android:readPermission="com.marshmallow.launcher.permission.READ_SETTINGS" />
+    </application>
+</manifest>

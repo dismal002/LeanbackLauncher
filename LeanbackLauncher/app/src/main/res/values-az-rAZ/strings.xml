@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="orb_search_action">Axtarış Fəaliyyəti</string>
+    <string name="lb_search_bar_hint">Axtarış</string>
+    <string name="lb_search_bar_hint_speech">Axtarış üçün danışın</string>
+    <string name="lb_search_bar_hint_with_title">Axtarış: %1$s</string>
+    <string name="lb_search_bar_hint_with_title_speech">Axtarış üçün danışın: %1$s</string>
+    <string name="lb_control_display_fast_forward_multiplier">%1$dX</string>
+    <string name="lb_control_display_rewind_multiplier">%1$dX</string>
+    <string name="lb_playback_controls_play">Oyun</string>
+    <string name="lb_playback_controls_pause">Pauza</string>
+    <string name="lb_playback_controls_fast_forward">İrəli Ötürmə</string>
+    <string name="lb_playback_controls_fast_forward_multiplier">İrəli sarı %1$dX</string>
+    <string name="lb_playback_controls_rewind">Geri ötürmə</string>
+    <string name="lb_playback_controls_rewind_multiplier">Geri sarı %1$dX</string>
+    <string name="lb_playback_controls_skip_next">Növbətini atlayın</string>
+    <string name="lb_playback_controls_skip_previous">Öncəkini atlayın</string>
+    <string name="lb_playback_controls_more_actions">Digər fəaliyyətlər</string>
+    <string name="lb_playback_controls_thumb_up">Bəyənməkdən imtina edin</string>
+    <string name="lb_playback_controls_thumb_up_outline">Bəyənin</string>
+    <string name="lb_playback_controls_thumb_down">Bəyənməməkdən imtina edin</string>
+    <string name="lb_playback_controls_thumb_down_outline">Bəyənməyin</string>
+    <string name="lb_playback_controls_repeat_none">Təkrarlanmasın</string>
+    <string name="lb_playback_controls_repeat_all">Hamısını təkrarlayın</string>
+    <string name="lb_playback_controls_repeat_one">Biri təkrarlansın</string>
+    <string name="lb_playback_controls_shuffle_enable">Qarışdırma aktiv edilsin</string>
+    <string name="lb_playback_controls_shuffle_disable">Qarışdırma deaktiv edilsin</string>
+    <string name="lb_playback_controls_high_quality_enable">Yüksək keyfiyyəti aktiv edin</string>
+    <string name="lb_playback_controls_high_quality_disable">Yüksək keyfiyyəti deaktiv edin</string>
+    <string name="lb_playback_controls_closed_captioning_enable">Qapalı çəkilişi aktiv edin</string>
+    <string name="lb_playback_controls_closed_captioning_disable">Qapalı çəkilişi deaktiv edin</string>
+</resources>
