@@ -468,8 +468,7 @@ public class NotificationMonitorService extends NotificationListenerService impl
         intent.addCategory("android.intent.category.LAUNCHER");
         intent.setComponent(componentName);
         intent.addFlags(270532608);
-        intent.addFlags(268435456);
-        return PendingIntent.getActivity(this, 0, intent, 268435456);
+        return PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
     }
 
     private String getRccPackageName(RemoteController controller) {
