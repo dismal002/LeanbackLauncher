@@ -739,10 +739,10 @@ public class MainActivity extends Activity {
     private boolean checkFirstRunAfterBoot() {
         Intent dummyIntent = new Intent("android.intent.category.LEANBACK_LAUNCHER");
         dummyIntent.setClass(this, DummyActivity.class);
-        PendingIntent intent = PendingIntent.getActivity(this, 0, dummyIntent, 536870912);
+        PendingIntent intent = PendingIntent.getActivity(this, 0, dummyIntent, PendingIntent.FLAG_NO_CREATE | PendingIntent.FLAG_IMMUTABLE);
         boolean firstRun = intent == null;
         if (firstRun) {
-            PendingIntent intent2 = PendingIntent.getActivity(this, 0, dummyIntent, 0);
+            PendingIntent intent2 = PendingIntent.getActivity(this, 0, dummyIntent, PendingIntent.FLAG_IMMUTABLE);
             AlarmManager alarmMgr = (AlarmManager) getSystemService("alarm");
             alarmMgr.set(2, SystemClock.elapsedRealtime() + 711573504, intent2);
         }
